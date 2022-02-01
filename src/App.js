@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css'
+import LibroCreate from './libro/LibroCreate';
+import LibroPage from './libro/LibroPage';
+import LibroUpdate from './libro/LibroUpdate';
+import Navbar from './components/Navbar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+export default function App(){
+  return(
+
+    <BrowserRouter>
+      <div>
+          <h1 className="App">PROYECTO INICIADO</h1>
+          <h2 className='subtitulo1'>BASES DE DATOS: PLATAFORMA DE ALQUILER</h2>
+      </div>
+
+      <Navbar/>
+          <Routes>
+            <Route path="/libro" element={<LibroPage/>}/>
+            <Route path="/createlibro" element={<LibroCreate/>}/>
+            <Route path="/updatelibro/:idlibro" element={<LibroUpdate/>}/>
+            
+          </Routes>
+    
+    </BrowserRouter>
+
   );
 }
 
-export default App;
+
+
