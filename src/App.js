@@ -4,6 +4,15 @@ import './App.css'
 import LibroCreate from './libro/LibroCreate';
 import LibroPage from './libro/LibroPage';
 import LibroUpdate from './libro/LibroUpdate';
+
+import UsuarioCreate from './usuario/UsuarioCreate';
+import UsuarioPage from './usuario/UsuarioPage';
+import UsuarioUpdate from './usuario/UsuarioUpdate';
+
+import LectorCreate from './lector/LectorCreate';
+import LectorPage from './lector/LectorPage';
+import LectorUpdate from './lector/LectorUpdate';
+
 import Navbar from './components/Navbar';
 
 export default function App(){
@@ -20,7 +29,16 @@ export default function App(){
             <Route path="/libro" element={<LibroPage/>}/>
             <Route path="/createlibro" element={<LibroCreate/>}/>
             <Route path="/updatelibro/:idlibro" element={<LibroUpdate/>}/>
+
+            <Route path="/usuario" element={<UsuarioPage/>}/>
+            <Route path="/createusuario" element={<UsuarioCreate/>}/>
+            <Route path="/updateusuario/:idUsuario" element={<UsuarioUpdate/>}/>
             
+            <Route path="/lector" element={<LectorPage/>}/>
+            <Route path="/createlector" element={<LectorCreate/>}/>
+            <Route path="/updatelector/:idLector" element={<LectorUpdate/>}/>
+            
+
           </Routes>
     
     </BrowserRouter>

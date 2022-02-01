@@ -1,15 +1,17 @@
 import React from 'react';
 
-export default function LibroList (props){
+
+export default function UsuarioList (props){
 
     return(
         
     <table>
         <thead >
         <tr>
-            <th >Id Libro</th>
-            <th >Título</th>
-            <th>Año</th>
+            <th >Id Usuario</th>
+            <th >Username</th>
+            <th>Password</th>
+            <th>Status</th>
             <th>Acciones</th>
         </tr>
         </thead>

@@ -13,8 +13,13 @@ export default function Navbar (){
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/cliente">
-                    Clientes
+                <NavLink to="/lector">
+                    Lectores
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/usuario">
+                    Usuarios
                 </NavLink>
             </li>
         </ul>

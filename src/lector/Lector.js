@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import './Lector.css';
+import './Lector.css';
 
 export default function Libro(props){
     return(
