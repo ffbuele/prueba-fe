@@ -36,7 +36,7 @@ export default function App(){
             
             <Route path="/lector" element={<LectorPage/>}/>
             <Route path="/createlector" element={<LectorCreate/>}/>
-            <Route path="/updatelector/:idLector" element={<LectorUpdate/>}/>
+            <Route path="/updatelector/:idlector" element={<LectorUpdate/>}/>
             
 
           </Routes>

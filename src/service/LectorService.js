@@ -7,8 +7,8 @@ const getListLector = async () => {
     return  data;
 }
 
-const findByIdLector = async (idLector) => {
-    const response = await fetch(`${urlCrud}/libro/${idLector}`);  
+const findByIdLector = async (idlector) => {
+    const response = await fetch(`${urlCrud}/libro/${idlector}`);  
     const data = await response.json();     
     return  data;
 }

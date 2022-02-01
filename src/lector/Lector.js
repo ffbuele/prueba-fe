@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Lector.css';
 
-export default function Libro(props){
+export default function Lector(props){
     return(
         <tr>
             <td className="formatoUno">{props.itemLector.idlector}</td>

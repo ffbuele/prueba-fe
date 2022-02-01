@@ -5,7 +5,7 @@ import { findByIdUsuario,updateUsuario } from '../service/UsuarioService';
 function UsuarioPage () {
   
   const { idUsuario } = useParams();
-  const [usuario, setUsuario] = useState({titulo:'',anio:''});
+  const [usuario, setUsuario] = useState({username:'',password:'',status:''});
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -13,9 +13,9 @@ function UsuarioPage () {
   }
   const onChange = (event) =>{
         if(event.target.name==='username')
-            setUsuario({...usuario,titulo:event.target.value})    
+            setUsuario({...usuario,username:event.target.value})    
         if(event.target.name==='password')    
-            setUsuario({...usuario,anio:event.target.value})
+            setUsuario({...usuario,password:event.target.value})
         if(event.target.name==='status')    
             setUsuario({...usuario,status:event.target.value})
   }
