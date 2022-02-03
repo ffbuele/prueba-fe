@@ -27,7 +27,7 @@ export default function App(){
       <Navbar/>
           <Routes>
 
-            
+
             <Route path="/libro" element={<LibroPage/>}/>
             <Route path="/createlibro" element={<LibroCreate/>}/>
             <Route path="/updatelibro/:idlibro" element={<LibroUpdate/>}/>

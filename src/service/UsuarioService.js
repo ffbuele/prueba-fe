@@ -8,7 +8,7 @@ const getListUsuario = async () => {
 }
 
 const findByIdUsuario = async (idUsuario) => {
-    const response = await fetch(`${urlCrud}/libro/${idUsuario}`);  
+    const response = await fetch(`${urlCrud}/usuario/${idUsuario}`);  
     const data = await response.json();     
     return  data;
 }
