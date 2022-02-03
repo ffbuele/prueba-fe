@@ -26,18 +26,21 @@ export default function App(){
 
       <Navbar/>
           <Routes>
+
+            
             <Route path="/libro" element={<LibroPage/>}/>
             <Route path="/createlibro" element={<LibroCreate/>}/>
             <Route path="/updatelibro/:idlibro" element={<LibroUpdate/>}/>
 
-            <Route path="/usuario" element={<UsuarioPage/>}/>
-            <Route path="/createusuario" element={<UsuarioCreate/>}/>
-            <Route path="/updateusuario/:idUsuario" element={<UsuarioUpdate/>}/>
-            
             <Route path="/lector" element={<LectorPage/>}/>
             <Route path="/createlector" element={<LectorCreate/>}/>
             <Route path="/updatelector/:idlector" element={<LectorUpdate/>}/>
             
+            <Route path="/usuario" element={<UsuarioPage/>}/>
+            <Route path="/createusuario" element={<UsuarioCreate/>}/>
+            <Route path="/updateusuario/:idUsuario" element={<UsuarioUpdate/>}/>
+            
+                       
 
           </Routes>
     
